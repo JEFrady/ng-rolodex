@@ -1,0 +1,39 @@
+.contact-list {
+    width: 80vw;
+    margin: 0 auto;
+}
+.contact-card{
+    width: 100%;
+    background: #ffffff;
+    margin: 0px 0px 10px 0px;
+    border: .5px solid #e6e6e6;
+    padding: 10px 30px 10px 30px;
+
+}
+
+.contact-img {
+    width: 50px;
+    height: 50px;
+}
+
+.edit {
+    float: right;
+    vertical-align: middle;
+    margin-top: 15px;
+}
+
+h1 {
+    margin-bottom: 41px;
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5%;
+}

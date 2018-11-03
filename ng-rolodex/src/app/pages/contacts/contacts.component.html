@@ -1,0 +1,34 @@
+
+<div class='contact-list'>
+    <h1>{{title}}</h1>
+    <div *ngFor="let contacts of contacts" class="contact-card">
+      <ul>
+        <li>
+            <img src="../../../assets/user-default.png" class="contact-img">
+        </li>
+        <li>
+            {{ contacts.name }}
+        </li>
+        <li>
+            {{ contacts.primary_phone }}
+        </li>
+        <li>
+            {{ contacts.email }}
+        </li>
+        <li>
+            <i class="fab fa-twitter"></i>
+        </li>
+        <li>
+            <i class="fab fa-instagram"></i>
+        </li>
+        <li>
+            <i class="fab fa-github"></i>
+        </li>
+        <a routerLink='/edit' class='edit'>Edit</a>
+        <a (click)="delete(contacts.email)" routerLink='/contacts' class='delete'>Delete</a>
+      </ul>
+  </div>
+
+</div>
+
+

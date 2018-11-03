@@ -1,0 +1,12 @@
+<div class='header'>
+    <div id='header-left' routerLink='/'>
+        <h1>inDEX</h1>
+    </div>
+    <div id='header-right'>
+        <a routerLink='/contacts'>Contacts</a>
+        <a routerLink='/new-contact'>Add Contact</a>
+        <a *ngIf=!user.loggedIn routerLink='/login'>Login</a>
+        <a *ngIf=user.loggedIn routerLink='/account'>{{ user.username }}</a>
+
+    </div>
+</div>
