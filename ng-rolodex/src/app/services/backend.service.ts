@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-// import { ContactsComponent } from '../pages/contacts/contacts.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 type contactsArray = Array<{ name: string, address: string, primary_phone: string, alt_phone: string, email: string, twitter: string, instagram: string, github: string}>
 
@@ -39,8 +39,16 @@ export class BackendService{
     }
 
     removeContact(email) {
-        console.log(email)
+        let index = this.contacts.map( element => { return element.email }).indexOf(email)
+        this.contacts.splice(index, 1)
     }
+
+    // editContact(email) {
+    //     let contact = this.contacts.filter( element => {
+    //         return element.email === email
+    //     })
+    //     return contact
+    // }
 
     register(data) {
         return Promise.resolve({});

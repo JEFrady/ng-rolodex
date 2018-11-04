@@ -24,7 +24,7 @@
         <li>
             <i class="fab fa-github"></i>
         </li>
-        <a routerLink='/edit' class='edit'>Edit</a>
+        <a (click)="edit(contacts.email)" routerLink='/edit' class='edit'>Edit</a>
         <a (click)="delete(contacts.email)" routerLink='/contacts' class='delete'>Delete</a>
       </ul>
   </div>

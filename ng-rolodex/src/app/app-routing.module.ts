@@ -6,6 +6,7 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { NewContactComponent } from './pages/new-contact/new-contact.component';
 import { AccountComponent } from './pages/account/account.component';
 import { LoginComponent } from './pages/login/login.component';
+import { EditContactComponent } from './pages/edit-contact/edit-contact.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'new-contact', component: NewContactComponent },
   { path: 'account', component: AccountComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'edit/:id', component: EditContactComponent},
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

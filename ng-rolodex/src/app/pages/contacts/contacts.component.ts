@@ -1,13 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { BackendService } from 'src/app/services/backend.service';
-import { ContactCardComponent } from 'src/app/shared/contact-card/contact-card.component'
 
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.scss']
 })
-export class ContactsComponent implements OnInit {
+export class ContactsComponent {
   title: string='All contacts';
   // subtitle: string;
   contacts: any[];
@@ -24,5 +23,10 @@ export class ContactsComponent implements OnInit {
 
   delete(email) {
     this.backend.removeContact(email)
+  }
+
+  edit(email) {
+    this.backend.editContact(email)
+    
   }
 }

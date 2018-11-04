@@ -1,0 +1,33 @@
+<div class='edit-contact-page'>
+  <h1>Edit {{contacts.name}}</h1>
+  <form>
+      <label>Name:
+          <input type="text" name="name" [(ngModel)]="formData.name" (keyup)="validateName()">
+      </label>
+      <label>Address:
+          <input type="text" name="address" [(ngModel)]='formData.address'>
+      </label>
+      <label>Primary phone:
+          <input type="text" name='primary_phone' [(ngModel)]='formData.primary_phone'>
+      </label>
+      <label>Alternate phone:
+          <input type="text" name='alt_phone' [(ngModel)]='formData.alt_phone'>
+      </label>
+      <label>Email:
+          <input type="text" name="email" [(ngModel)]="formData.email" (keyup)="validateEmail()">
+      </label>
+      <label>Twitter (URL):
+          <input type="url" name='twitter' [(ngModel)]='formData.twitter'>
+      </label>
+      <label>Instagram (URL):
+          <input type="url" name='instagram' [(ngModel)]='formData.instagram'>
+      </label>
+      <label>Github (URL):
+          <input type="url" name='github' [(ngModel)]='formData.github'>
+      </label>
+      <button (click)="update()" class="btn-submit" routerLink='/contacts'>Update</button>
+  </form>
+</div>
+
+
+

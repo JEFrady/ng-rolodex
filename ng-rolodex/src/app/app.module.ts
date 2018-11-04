@@ -18,6 +18,7 @@ import { ContactCardComponent } from './shared/contact-card/contact-card.compone
 import { BackendService } from './services/backend.service';
 import { SessionService } from './services/session.service';
 import { AuthService } from './services/auth.service';
+import { EditContactComponent } from './pages/edit-contact/edit-contact.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { AuthService } from './services/auth.service';
     AccountComponent,
     LoginComponent,
     ContactCardComponent,
-    FilterPipe
+    FilterPipe,
+    EditContactComponent
   ],
   imports: [
     BrowserModule,
