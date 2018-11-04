@@ -58,8 +58,6 @@ export class EditContactComponent {
     this.formData.instagram = contact[0].instagram
     this.formData.github = contact[0].github
     console.log('para', this.formData)
-    
-    
   }
 
 
@@ -90,7 +88,9 @@ export class EditContactComponent {
       }
   }
 
-  update () {
-      console.log(this.formData)
+  update (contact) {
+    let email = this._route.snapshot.params.id
+    this.backend.removeContact(email)
+    this.contacts.push(this.formData)
   }
 }

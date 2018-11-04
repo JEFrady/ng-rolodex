@@ -43,12 +43,6 @@ export class BackendService{
         this.contacts.splice(index, 1)
     }
 
-    // editContact(email) {
-    //     let contact = this.contacts.filter( element => {
-    //         return element.email === email
-    //     })
-    //     return contact
-    // }
 
     register(data) {
         return Promise.resolve({});
