@@ -25,8 +25,8 @@ export class ContactsComponent {
     this.backend.removeContact(email)
   }
 
-  edit(email) {
-    this.backend.editContact(email)
+  // edit(email) {
+  //   this.backend.editContact(email)
     
-  }
+  // }
 }
